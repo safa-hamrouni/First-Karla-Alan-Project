@@ -1,1 +1,61 @@
-# First-Karla-Alan-Project
+
+header {
+	padding:60px;
+	width:100%;
+	border:5px solid orange;
+	border-radius: 50px;
+	text-align: center;
+	font-size: 40px;
+	font-style:italic;
+	margin-left: 2%;
+	opacity: 0.8;
+}
+body {
+	width:85%;
+}
+main {
+	width:100%;
+	background-color: beige;
+	margin-left:8%;
+	margin-top: 10%;
+	border: 5px solid black;
+	border-radius: 50px;
+	opacity: 0.95;
+}
+#question {
+	border: 3px solid #FF6347;
+	border-radius: 30px;
+	width: 500px;
+	height:20px;
+	padding: 20px;
+	background-color: #FFEBCD;
+	opacity: 0.6;
+	text-align: center;
+	font-size: 25px;
+	margin:auto;
+	margin-top: 20px;
+	
+}
+#btn {
+	width:80px;
+	height: 30px;
+	padding:0;
+	text-align: center;
+	margin-left:48%;
+	margin-top: 30%;
+	opacity: 0.8;
+	border: 3px solid #20B2AA;
+	border-radius: 50px;
+}
+#reveal {
+	border: 3px solid #9ACD32;
+	border-radius: 10px;
+	text-align: center;
+	width: 400px;
+	padding:10px;
+	margin:auto;
+	background-color: #FFEBCD;;
+	opacity: 0.6;
+}
+
+
