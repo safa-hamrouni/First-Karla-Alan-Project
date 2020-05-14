@@ -38,7 +38,7 @@ function display(){
 			$(' ul > .answer2').text(arr[i].answer2)
 			$(' ul > .answer3').text(arr[i].answer3)
 		},
-		// reveal: function()
+		 reveal: function()
 
 	};
 }
