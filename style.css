@@ -23,18 +23,17 @@ main {
 	opacity: 0.95;
 }
 #question {
-	border: 3px solid #FF6347;
+	border: 3px solid black;
 	border-radius: 30px;
 	width: 500px;
 	height:20px;
 	padding: 20px;
-	background-color: #FFEBCD;
+	background-color: #FF6347;
 	opacity: 0.6;
 	text-align: center;
 	font-size: 25px;
 	margin:auto;
 	margin-top: 20px;
-	
 }
 #btn {
 	width:80px;
@@ -42,20 +41,39 @@ main {
 	padding:0;
 	text-align: center;
 	margin-left:48%;
-	margin-top: 30%;
+	margin-top: 40%;
 	opacity: 0.8;
-	border: 3px solid #20B2AA;
+	border: 3px solid black;
 	border-radius: 50px;
+	background-color: #20B2AA;
 }
 #reveal {
-	border: 3px solid #9ACD32;
+	border: 3px solid black;
 	border-radius: 10px;
 	text-align: center;
 	width: 400px;
 	padding:10px;
 	margin:auto;
-	background-color: #FFEBCD;;
+	background-color: #9ACD32;
 	opacity: 0.6;
 }
+li {
+	width: 400px;
+	height: 30px;
+	list-style-type: none ;
+	font-size: 16px;
+	font-style: bold;
+	border: 2px solid black;
+	border-radius: 50px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background-color: pink;
+}
+ul {
+	margin-top: 20%;
+}
 
-
+h1 {
+  font-family: 'Luckiest Guy';
+   }
+  
