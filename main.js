@@ -23,6 +23,14 @@ var array = [
 	'Who would ever think that Chickens could be frogs ! Magic..', 'Yup! invented Romeo and Juliet, Hamlet AND vomit .. ', 'I think Trump is expected to do it next !','You probably guessed it right away !'];
 
 
+ // function reveal(){
+	// 	$('ul').append("<li>class = 'answer1'</li>")
+	// 	$('ul').append("<li>class = 'answer2'</li>")
+	// 	$('ul').append("<li>class = 'answer3'</li>")
+	// 	$('ul').sort()
+	// }
+
+
 function display(){
 	var i = 0;
 	return {
@@ -38,7 +46,7 @@ function display(){
 			$(' ul > .answer2').text(arr[i].answer2)
 			$(' ul > .answer3').text(arr[i].answer3)
 		},
-		 reveal: function()
+
 
 	};
 }
@@ -48,11 +56,18 @@ nextQuestion.questionAnswer(array)
 
 
 
-$('#next').on('click', function(){
+$('#confirm').on('click', function(){
 	nextQuestion.up()
 	nextQuestion.questionAnswer(array)
 
 })
+$('.answer1').on("click", function(){
+	$('.answer1').css("background-color", "green")
+})
 
 
-
+ // function reveal(){
+	// 	$('ul').append("<li>class = 'answer1'</li>")
+	// 	$('ul').append("<li>class = 'answer2'</li>")
+	// 	$('ul').append("<li>class = 'answer3'</li>")
+	// }

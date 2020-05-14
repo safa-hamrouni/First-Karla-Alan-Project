@@ -36,22 +36,12 @@ main {
 	margin-top: 20px;
 	margin-bottom: 50px;
 }
-#confirm {
-	width: 100px;
-	height: 25px;
-	text-align: left;
-	margin-left:45%;
-	opacity: 0.8;
-	border: 2px solid black;
-	border-radius: 10px;
-	background-color: #20B2AA;
-}
- #next {
-	width:120px;
+ #confirm {
+	width:140px;
 	height: 25px;
 	padding:0;
-	text-align: right;
-	margin-left:55%;
+	text-align: center;
+	margin-left:45%;
 	margin-top: 40%;
 	opacity: 0.8;
 	border: 2px solid black;
@@ -68,7 +58,7 @@ main {
 	margin:auto;
 	background-color: #9ACD32;
 	opacity: 0.6;
-	margin-top: 400px;
+/*	margin-top: 400px;*/
 }
 
 li {
@@ -90,7 +80,5 @@ ul {
 h1 {
   font-family: 'Luckiest Guy';
    }
- .flex {
- 	margin:auto;
- }
+
   
