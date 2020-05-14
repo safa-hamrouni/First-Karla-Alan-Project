@@ -1,16 +1,7 @@
 
 $("main").css({"background-image":"url('https://images.unsplash.com/photo-1516534775068-ba3e7458af70?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80')", "background-size":"cover"});
 $("body").css("background-image", "url('https://previews.123rf.com/images/drekhann/drekhann1809/drekhann180900241/109238524-funny-doodle-monsters-seamless-pattern-for-prints-designs-and-coloring-books-vector-illustration.jpg')");
-$("header").css("background-color":"black", "color":"white")
-
-
-//var answers = $("#question").append("<li class = "answer">text</li>");
-//function addList(answers){
-//	for (var i = 0 ; i <= 3 ; i++){
-//		return answers;
-//	}
-//}
-
+$("header").css({"background-color":"black", "color":"white"})
 
 var array = [
     {question: 'Which instrument has forty-seven strings and seven pedals?', answer1: 'Harp', answer2: 'piano', answer3:' kanoun'},
@@ -26,16 +17,40 @@ var array = [
     {question:'The leader of which country has his face on all the joghurt pots and has named the month January after himself', answer1:'Turkmenistan', answer2: 'Azarbidjan',answer3:'Tanzania'},
     {question:'What is the cross between a donkey and a zebra known as?', answer1:'ZeeDonk', answer2:'DonKra', answer3:'CapyBara'}
 			]
- var didYouKnow = ['did you really think we meant kanoun.... it\'s 9anoun', 'Yup it\'s pink.. Don\'t be sexist !','It’s natural to be afraid of JavaScript but This one was a real phobia !', 'I really hope you didn\'t think you can put your picture on a cow',
- 'If you didn\'t see Nouba.. you wouldn\'t know ! 😅', 'You don\'t know what cow-dung is ??? Look it up (link)', 'Now you should know what cow dung is !', 'I thought France had more vocabulary than just that !',
- 'Who would ever think that Chickens could be frogs ! Magic..', 'Yup! invented Romeo and Juliet, Hamlet AND vomit .. ', 'I think Trump is expected to do it next !','You probably guessed it right away !'];
+ var didYouKnow = ['did you really think we meant kanoun.... it\'s 9anoun', 'Yup it\'s pink.. Don\'t be sexist !','It’s natural to be afraid of JavaScript but This one was a real phobia !', 
+ 	'I really hope you didn\'t think you can put your picture on a cow',
+	'If you didn\'t see Nouba.. you wouldn\'t know ! 😅', 'You don\'t know what cow-dung is ??? Look it up (link)', 'Now you should know what cow dung is !', 'I thought France had more vocabulary than just that !',
+	'Who would ever think that Chickens could be frogs ! Magic..', 'Yup! invented Romeo and Juliet, Hamlet AND vomit .. ', 'I think Trump is expected to do it next !','You probably guessed it right away !'];
 
-function display(array) {
-	for (var i = 0 ; i < array.length ; i++){
-		$('.center').text(array[i].question);
-		$('li .answer1').append('array[i].answer1');
-	    $('li .answer2').append(array[i].answer2);
-		$('li .answer3').append(array[i].answer3);
-	}
+
+function display(){
+	var i = 0;
+	return {
+		up: function(){
+			i++
+		},
+		reset: function(){
+			i = 0
+		},
+		questionAnswer: function(arr){
+			$('div > p').text(arr[i].question)
+			$(' ul > .answer1').text(arr[i].answer1)
+			$(' ul > .answer2').text(arr[i].answer2)
+			$(' ul > .answer3').text(arr[i].answer3)
+		}
+	};
 }
-display(array)
+
+var test = display()
+test.questionAnswer(array)
+
+
+$('#btn').on('click', function(){
+	// var nextQuestion = display()
+	test.up()
+	test.questionAnswer(array)
+
+})
+
+
+
