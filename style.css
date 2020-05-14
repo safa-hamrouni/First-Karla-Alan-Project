@@ -35,18 +35,29 @@ main {
 	margin:auto;
 	margin-top: 20px;
 }
-#btn {
-	width:80px;
-	height: 30px;
+#next {
+	width:120px;
+	height: 25px;
 	padding:0;
 	text-align: center;
-	margin-left:48%;
+	margin-left:55%;
 	margin-top: 40%;
 	opacity: 0.8;
-	border: 3px solid black;
-	border-radius: 50px;
+	border: 2px solid black;
+	border-radius: 10px;
 	background-color: #20B2AA;
 }
+/*#confirm {
+	width: 100px;
+	height: 25px;
+	text-align: center;
+	margin-left:45%;
+	opacity: 0.8;
+	border: 2px solid black;
+	border-radius: 10px;
+	background-color: #20B2AA;
+}*/
+
 #reveal {
 	border: 3px solid black;
 	border-radius: 10px;
@@ -56,6 +67,10 @@ main {
 	margin:auto;
 	background-color: #9ACD32;
 	opacity: 0.6;
+}
+.flex{
+	display: flex;
+	flex-direction: row;
 }
 li {
 	width: 400px;

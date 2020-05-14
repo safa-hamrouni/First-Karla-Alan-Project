@@ -37,18 +37,20 @@ function display(){
 			$(' ul > .answer1').text(arr[i].answer1)
 			$(' ul > .answer2').text(arr[i].answer2)
 			$(' ul > .answer3').text(arr[i].answer3)
-		}
+		},
+		// reveal: function()
+
 	};
 }
 
-var test = display()
-test.questionAnswer(array)
+var nextQuestion = display()
+nextQuestion.questionAnswer(array)
 
 
-$('#btn').on('click', function(){
-	// var nextQuestion = display()
-	test.up()
-	test.questionAnswer(array)
+
+$('#next').on('click', function(){
+	nextQuestion.up()
+	nextQuestion.questionAnswer(array)
 
 })
 
