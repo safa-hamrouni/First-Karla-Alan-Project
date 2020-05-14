@@ -34,8 +34,9 @@ main {
 	font-size: 25px;
 	margin:auto;
 	margin-top: 20px;
+	margin-bottom: 50px;
 }
-#next {
+ #next {
 	width:120px;
 	height: 25px;
 	padding:0;
@@ -47,17 +48,20 @@ main {
 	border-radius: 10px;
 	background-color: #20B2AA;
 }
-/*#confirm {
+#confirm {
 	width: 100px;
 	height: 25px;
 	text-align: center;
 	margin-left:45%;
+	margin-top: 40%;
 	opacity: 0.8;
 	border: 2px solid black;
 	border-radius: 10px;
 	background-color: #20B2AA;
-}*/
-
+}
+.flex{
+	float: left;
+}
 #reveal {
 	border: 3px solid black;
 	border-radius: 10px;
@@ -68,10 +72,7 @@ main {
 	background-color: #9ACD32;
 	opacity: 0.6;
 }
-.flex{
-	display: flex;
-	flex-direction: row;
-}
+
 li {
 	width: 400px;
 	height: 30px;
