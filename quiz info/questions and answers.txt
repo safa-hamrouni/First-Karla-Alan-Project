@@ -4,7 +4,7 @@ Which instrument has forty-seven strings and seven pedals? Harp. piano. kanoun.
 
 What is the most common colour of toilet paper in France? pink white black
 
-Yup it's pink.. Don't be sexist ! 
+Yup it's pink.. Don't be sexist !//hide show when button clicked 
 ------
 
 Coprastastaphobia is the fear of what? constipation spiders javascript
