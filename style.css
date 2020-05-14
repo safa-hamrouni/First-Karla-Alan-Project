@@ -26,15 +26,12 @@ main {
 	border: 3px solid black;
 	border-radius: 30px;
 	width: 500px;
-	height:20px;
-	padding: 20px;
-	background-color: #FF6347;
+	height:105px;
+/*	padding: 20px;
+*/	background-color: #FF6347;
 	opacity: 0.6;
 	text-align: center;
-	font-size: 25px;
 	margin:auto;
-	margin-top: 20px;
-	margin-bottom: 50px;
 }
  #confirm {
 	width:140px;
@@ -48,6 +45,9 @@ main {
 	border-radius: 10px;
 	background-color: #20B2AA;
 }
+ h3 {
+ 	font-size: 30px;
+ }
 
 #reveal {
 	border: 3px solid black;
