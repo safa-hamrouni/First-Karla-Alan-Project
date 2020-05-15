@@ -45,6 +45,7 @@ main {
 	border: 2px solid black;
 	border-radius: 10px;
 	background-color: #20B2AA;
+	outline: none;
 }
  h3 {
  	font-size: 30px;
@@ -77,6 +78,7 @@ li {
 	margin-bottom: 30px;
 	margin-left: 20px;
 	background-color: pink;
+	cursor: pointer;
 }
 ul {
 	margin-top: 20%;
@@ -85,5 +87,24 @@ ul {
 h1 {
   font-family: 'Luckiest Guy';
    }
-
-  
+.deco{
+	box-shadow: 0 0 10px 5px;
+}
+#start {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width:600px;
+	height: 250px;
+	margin:auto;
+	margin-top: 10%;
+	margin-left:35%;
+	font-size: 60px;
+	font-weight: bolder;
+	padding: 10px 20px;
+	background-image: url('https://cdn.nohat.cc/thumb/f/720/4749454863237120.jpg');
+	opacity: 0.8;
+	border: 5px solid black;
+	border-radius: 50px;
+	outline: none;
+  }
