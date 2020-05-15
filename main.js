@@ -31,7 +31,8 @@ function display(){
 		start: function(){
 			$(".deco").hide()
 			 $("#start").on("click", function(){
-			 	setTimeout(function(){$(".deco").show()
+			 	setTimeout(function(){
+			 		$(".deco").show()
 			 	$("#start").hide()
 			 },1000)
 			})
@@ -59,6 +60,7 @@ function display(){
 					var e = $(this)
 					if(e.text() === correctAnswer[i]){
 			 			e.css('background-color', 'green');
+
 			 			
 					}
 					 else {
