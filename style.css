@@ -2,13 +2,17 @@
 header {
 	padding:60px;
 	width:100%;
-	border:5px solid orange;
+	border:5px solid black;
 	border-radius: 50px;
-	text-align: center;
-	font-size: 40px;
-	font-style:italic;
 	margin-left: 2%;
 	opacity: 0.8;
+}
+h1{
+	text-align: center;
+	font-size: 80px;
+	font-style:italic;
+	color: #00FFFF;
+	text-shadow: 4px 4px #00008B; 
 }
 body {
 	width:85%;
