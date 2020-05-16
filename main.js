@@ -35,7 +35,6 @@ function display(){
 			$(".decoo").hide()
 			 $("#start").on("click", function(){
 			 	setTimeout(function(){
-
 			 		$(".decoo").show()
 			 	$("#start").hide()
 			 },1000)
@@ -53,20 +52,20 @@ function display(){
 					if(e.text() === correctAnswer[i]){
 			 			e.css('background-color', 'green');	
 			 			$('#answers').hide()
-					 	$('h3').append('<div class= "monkey"><img src = "https://2.bp.blogspot.com/-S0fFka6A4vE/WLojzomGEfI/AAAAAAANzHc/HJWE1Ui_OrQlNxhV6bEWNTLGyWWjmHu9wCLcB/s1600/AW386483_01.gif" ></div>')
-					 	$('h3 > .monkey').show()
+					 	//$('h3').append('<div class= "monkey"><img class="monk" src = "https://2.bp.blogspot.com/-S0fFka6A4vE/WLojzomGEfI/AAAAAAANzHc/HJWE1Ui_OrQlNxhV6bEWNTLGyWWjmHu9wCLcB/s1600/AW386483_01.gif" ></div>')
+					 	$('#monkey1').show()
 					 	setTimeout(function(){
-					 	$('.monkey').hide()
-					 	$('#answers').show()
+					 	$('#monkey1').hide()
+					 	$('#answers').show()					 	
 					 	}, 3000)
 					}
 					 else {
 					 	e.css("background-color", "red")
 					 	$('#answers').hide()
-					 	$('h3').append('<div class = "monkey"><img src = "https://2.bp.blogspot.com/-E46xUM32mqQ/WhwcIrEXsyI/AAAAAAAN200/yZ1CjxpR8CEyjxnHZiWqo2soQAPN4BQVwCLcBGAs/s1600/AW648334_19.gif" ></div>')
-					 	$('h3 > .monkey').show()
+					 	//$('h3').append('<div class = "monkey"><img src = "https://2.bp.blogspot.com/-E46xUM32mqQ/WhwcIrEXsyI/AAAAAAAN200/yZ1CjxpR8CEyjxnHZiWqo2soQAPN4BQVwCLcBGAs/s1600/AW648334_19.gif" ></div>')
+					 	$('#monkey2').show()
 					 	setTimeout(function(){
-					 	$('.monkey').hide()
+					 	$('#monkey2').hide()
 					 	$('#answers').show()
 					 	}, 3000)
 					 }
@@ -98,7 +97,12 @@ $('#confirm').on('click', function(){
 $('#finish').on("click", function(){
 	$('.deco').hide()
 	$('main').append('<div><img class="monkey" src="https://thumbs.gfycat.com/FatherlyUnfoldedCommongonolek-max-1mb.gif"></div>')
-
+	setTimeout(function(){
+		$(".monkey").hide()
+		$('main').hide()
+		$("footer").append('<img class = "thank-you" src="https://floorballvirden.weebly.com/uploads/1/0/6/1/106138143/thank_orig.gif">')
+	},3000)
 });
+
 
  

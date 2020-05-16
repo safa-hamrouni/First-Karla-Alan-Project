@@ -2,7 +2,7 @@
 header {
 	padding:60px;
 	width:100%;
-	height:300px;
+	height:280px;
 	border:5px solid white;
 	border-radius: 50px;
 	margin-left: 2%;
@@ -20,6 +20,7 @@ main {
 	background-size: 120% 95%;
 	margin-left:8%;
 	margin-top: 10%;
+	margin-bottom: 25%;
 	border: 5px solid black;
 	border-radius: 50px;
 	opacity: 1;
@@ -106,8 +107,9 @@ h1 {
 	width:600px;
 	height: 250px;
 	margin:auto;
-	margin-top: 10%;
+	margin-top: 15%;
 	margin-left:35%;
+	margin-bottom:15%;
 	padding: 10px 20px;
 	background-image: url('https://cdn2.vectorstock.com/i/1000x1000/62/91/start-neon-sign-design-template-start-race-vector-21256291.jpg');
 	background-size: 100% 120% ;
@@ -116,10 +118,19 @@ h1 {
 	outline: none;
 	box-shadow: 0 0 5px 2px #FFFACD;
   }
-  .monkey{
+  .monk{
+  	display: none;
   	margin-top:10px;
   	margin-left:20%;
-  	width: 50%;
+  	width:60%;
+  	padding:10px;
+  	border-radius: 5px;
+   	color:white;
+  }
+ .monkey3 {
+  	margin-top:10px;
+  	margin-left:25%;
+  	width: 40%;
   	padding: 10px;
   	border-radius: 5px;
    	color:white;
@@ -141,3 +152,7 @@ h1 {
 	box-shadow: 0 0 5px 2px #FFFACD;
 
   }
+.thank-you{
+	margin-top: 10px;
+	margin-left:35%;
+}
