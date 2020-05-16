@@ -3,7 +3,6 @@ $("main").css({"background-image":"url('https://thumbs.dreamstime.com/z/brown-bl
 //$("body").css("background-image", "url('https://previews.123rf.com/images/aliasching/aliasching1604/aliasching160400949/54725367-fun-pixel-squares-background-design-element.jpg')");
 $("body").css("background-color", "white")
 //$("header").css("background-image","url('https://cdn.pixabay.com/photo/2017/02/12/12/42/wall-2059909_960_720.png')")
-
 var array = [
     {question: 'Which instrument has forty-seven strings and seven pedals?', answer:['Piano','Kanoon','Harp']},
     {question:'What is the most common colour of toilet paper in France?', answer:['Pink','White','Black']},
@@ -30,7 +29,12 @@ function display(){
 	var i = 0;
 	return {
 		up: function(){
-			i++
+			 i++ ;
+            
+
+			// $(".end").hide()
+   //   		$('main').append('<div><img src="https://thumbs.gfycat.com/FatherlyUnfoldedCommongonolek-max-1mb.gif"></div>')
+			
 		},
 		// reset: function(){
 		// 	if(i === array.length){
@@ -38,19 +42,25 @@ function display(){
 		// }
 		// },
 		start: function(){
-			$(".deco").hide()
+			$(".decoo").hide()
 			 $("#start").on("click", function(){
 			 	setTimeout(function(){
-			 		$(".deco").show()
+
+			 		$(".decoo").show()
 			 	$("#start").hide()
 			 },1000)
 			})
 		},
-		questionAnswer: function(arr){
-			$('div > h3').text(arr[i].question)
-			$(' ul > .answer1').text(arr[i].answer[0])
-			$(' ul > .answer2').text(arr[i].answer[1])
-			$(' ul > .answer3').text(arr[i].answer[2])
+		// end : function(){
+		// 		 $(".end").hide()
+		// 		 $('main').append('<div><img src="https://thumbs.gfycat.com/FatherlyUnfoldedCommongonolek-max-1mb.gif"></div>')
+			
+			//},
+		questionAnswer: function(array){
+			$('div > h3').text(array[i].question)
+			$(' ul > .answer1').text(array[i].answer[0])
+			$(' ul > .answer2').text(array[i].answer[1])
+			$(' ul > .answer3').text(array[i].answer[2])
 		},
 		correct: function(didYouKnow, correctAnswer){
 				$('.ans').on("click", function(){
@@ -82,12 +92,12 @@ function display(){
 				$('li').css("background-color", "pink")
 				$('#reveal').text('')
 		},
-		end : function(arr){
-				if(arr[i] === undefined ){
-				$(".end").hide()
-				$('main').append('<div><img src="https://thumbs.gfycat.com/FatherlyUnfoldedCommongonolek-max-1mb.gif"></div>')
-			}
-			}
+// 				last : function(x){
+// 		      if( i === x.length - 1){
+// 			$('#confirm .btn').addClass('hide')
+// 		    $('.btn').removeClass('hide')
+//   }
+// }
 	}
 }
 
@@ -107,6 +117,10 @@ $('#confirm').on('click', function(){
 	nextQuestion.questionAnswer(array)
 })
 
-var end = display()
-	end.end(array)
+$('#finish').on("click", function(){
+	$('.deco').hide()
+	$('main').append('<div><img src="https://thumbs.gfycat.com/FatherlyUnfoldedCommongonolek-max-1mb.gif"></div>')
 
+});
+
+ 
