@@ -1,8 +1,7 @@
 
-$("main").css({"background-image":"url('https://thumbs.dreamstime.com/z/brown-blue-wooden-background-light-brown-wooden-floor-blue-light-wooden-wall-background-126467038.jpg')", "background-size":"initial"});
-//$("body").css("background-image", "url('https://previews.123rf.com/images/aliasching/aliasching1604/aliasching160400949/54725367-fun-pixel-squares-background-design-element.jpg')");
-$("body").css("background-color", "white")
-//$("header").css("background-image","url('https://cdn.pixabay.com/photo/2017/02/12/12/42/wall-2059909_960_720.png')")
+$("main").css({"background-image":"url('https://cdn2.vectorstock.com/i/1000x1000/23/11/brick-wall-background-neon-light-vector-27852311.jpg')", "background-size":"initial"});
+$("body").css("background-image","url('https://image.freepik.com/free-photo/cluster-bright-lights_23-2147798863.jpg')")
+
 var array = [
     {question: 'Which instrument has forty-seven strings and seven pedals?', answer:['Piano','Kanoon','Harp']},
     {question:'What is the most common colour of toilet paper in France?', answer:['Pink','White','Black']},
@@ -17,7 +16,8 @@ var array = [
     {question:'The leader of which country has his face on all the joghurt pots?', answer:['Tanzania','Azarbidjan','Turkmenistan']},
     {question:'What is the cross between a donkey and a zebra known as?', answer:['ZeeDonk','DonKra','CapyBara']}
 			]
- var didYouKnow = ['Did you really think we meant kanoun.... it\'s 9anoun', 'It\'s pink.. Can you believe it 🤦‍♀️ !','It’s natural to be afraid of JavaScript but This one was a real phobia !', 
+
+ var didYouKnow = ['It\'s HarpDid you really think we meant kanoun.... it\'s 9anoun', 'It\'s pink.. Can you believe it 🤦‍♀️ !','It’s natural to be afraid of JavaScript but This one was a real phobia !', 
  	'I really hope you didn\'t think you can put your picture on a cow',
 	'If you didn\'t see Nouba.. you wouldn\'t know ! 😅', 'You don\'t know what cow-dung is ??? Look it up (link)', 'Now you should know what cow dung is !', 'I thought France had more vocabulary than just that !',
 	'Who would ever think that Chickens could be frogs ! Magic..', 'Yup! invented Romeo and Juliet, Hamlet AND vomit .. ', 'I think Trump is expected to do it next !','You probably guessed it right away !'];
@@ -30,17 +30,7 @@ function display(){
 	return {
 		up: function(){
 			 i++ ;
-            
-
-			// $(".end").hide()
-   //   		$('main').append('<div><img src="https://thumbs.gfycat.com/FatherlyUnfoldedCommongonolek-max-1mb.gif"></div>')
-			
-		},
-		// reset: function(){
-		// 	if(i === array.length){
-		// 	i = 0
-		// }
-		// },
+			},
 		start: function(){
 			$(".decoo").hide()
 			 $("#start").on("click", function(){
@@ -51,11 +41,6 @@ function display(){
 			 },1000)
 			})
 		},
-		// end : function(){
-		// 		 $(".end").hide()
-		// 		 $('main').append('<div><img src="https://thumbs.gfycat.com/FatherlyUnfoldedCommongonolek-max-1mb.gif"></div>')
-			
-			//},
 		questionAnswer: function(array){
 			$('div > h3').text(array[i].question)
 			$(' ul > .answer1').text(array[i].answer[0])
@@ -73,7 +58,7 @@ function display(){
 					 	setTimeout(function(){
 					 	$('.monkey').hide()
 					 	$('#answers').show()
-					 	}, 5000)
+					 	}, 3000)
 					}
 					 else {
 					 	e.css("background-color", "red")
@@ -83,21 +68,15 @@ function display(){
 					 	setTimeout(function(){
 					 	$('.monkey').hide()
 					 	$('#answers').show()
-					 	}, 5000)
+					 	}, 3000)
 					 }
 					$('#reveal').text(didYouKnow[i]);
 				})
 		},
 		default : function(){
-				$('li').css("background-color", "pink")
+				$('li').css("background-color", "black")
 				$('#reveal').text('')
 		},
-// 				last : function(x){
-// 		      if( i === x.length - 1){
-// 			$('#confirm .btn').addClass('hide')
-// 		    $('.btn').removeClass('hide')
-//   }
-// }
 	}
 }
 
@@ -110,7 +89,6 @@ $('.ans').hover(function(){
 nextQuestion.correct(didYouKnow,correctAnswer)
 })
 
-
 $('#confirm').on('click', function(){
 	nextQuestion.default()
 	nextQuestion.up()
@@ -119,7 +97,7 @@ $('#confirm').on('click', function(){
 
 $('#finish').on("click", function(){
 	$('.deco').hide()
-	$('main').append('<div><img src="https://thumbs.gfycat.com/FatherlyUnfoldedCommongonolek-max-1mb.gif"></div>')
+	$('main').append('<div><img class="monkey" src="https://thumbs.gfycat.com/FatherlyUnfoldedCommongonolek-max-1mb.gif"></div>')
 
 });
 
