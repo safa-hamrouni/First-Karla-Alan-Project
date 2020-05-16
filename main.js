@@ -17,7 +17,7 @@ var array = [
     {question:'What is the cross between a donkey and a zebra known as?', answer:['ZeeDonk','DonKra','CapyBara']}
 			]
 
- var didYouKnow = ['It\'s HarpDid you really think we meant kanoun.... it\'s 9anoun', 'It\'s pink.. Can you believe it 🤦‍♀️ !','It’s natural to be afraid of JavaScript but This one was a real phobia !', 
+ var didYouKnow = ['It\'s Harp.. Did you really think we meant kanoun.... it\'s 9anoun', 'It\'s pink.. Can you believe it 🤦‍♀️ !','It’s natural to be afraid of JavaScript but This one was a real phobia !', 
  	'I really hope you didn\'t think you can put your picture on a cow',
 	'If you didn\'t see Nouba.. you wouldn\'t know ! 😅', 'You don\'t know what cow-dung is ??? Look it up (link)', 'Now you should know what cow dung is !', 'I thought France had more vocabulary than just that !',
 	'Who would ever think that Chickens could be frogs ! Magic..', 'Yup! invented Romeo and Juliet, Hamlet AND vomit .. ', 'I think Trump is expected to do it next !','You probably guessed it right away !'];
@@ -52,7 +52,6 @@ function display(){
 					if(e.text() === correctAnswer[i]){
 			 			e.css('background-color', 'green');	
 			 			$('#answers').hide()
-					 	//$('h3').append('<div class= "monkey"><img class="monk" src = "https://2.bp.blogspot.com/-S0fFka6A4vE/WLojzomGEfI/AAAAAAANzHc/HJWE1Ui_OrQlNxhV6bEWNTLGyWWjmHu9wCLcB/s1600/AW386483_01.gif" ></div>')
 					 	$('#monkey1').show()
 					 	setTimeout(function(){
 					 	$('#monkey1').hide()
@@ -62,7 +61,6 @@ function display(){
 					 else {
 					 	e.css("background-color", "red")
 					 	$('#answers').hide()
-					 	//$('h3').append('<div class = "monkey"><img src = "https://2.bp.blogspot.com/-E46xUM32mqQ/WhwcIrEXsyI/AAAAAAAN200/yZ1CjxpR8CEyjxnHZiWqo2soQAPN4BQVwCLcBGAs/s1600/AW648334_19.gif" ></div>')
 					 	$('#monkey2').show()
 					 	setTimeout(function(){
 					 	$('#monkey2').hide()
