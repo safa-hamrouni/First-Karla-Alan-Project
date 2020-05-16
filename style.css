@@ -2,15 +2,15 @@
 header {
 	padding:60px;
 	width:100%;
-	border:5px solid black;
+	border:5px solid white;
 	border-radius: 50px;
 	margin-left: 2%;
-	opacity: 0.8;
-	background-image: url('https://cdn.pixabay.com/photo/2017/02/12/12/42/wall-2059909_960_720.png');
-}
-.change{
-	background-color: yellow ;
-    background-image: none;
+	opacity: 0.7;
+/*	background-image: url('https://i.pinimg.com/736x/cf/8e/a0/cf8ea00ed48f397a90bf328cc6583411.jpg');
+*/	
+	background-color: #ADD8E6;
+	background-size: contain;
+	box-shadow: 0 0 10px 5px white;
 }
 h1{
 	text-align: center;
@@ -29,7 +29,7 @@ main {
 	margin-top: 10%;
 	border: 5px solid black;
 	border-radius: 50px;
-	opacity: 0.95;
+	opacity: 1;
 }
 #question  {
 	border: 3px solid black;
@@ -44,11 +44,13 @@ main {
 	margin:auto;
 }
  #confirm {
-	width:140px;
-	height: 25px;
+	width:20%;
+	height: 30px;
 	padding:0;
 	text-align: center;
-	margin-left:45%;
+	font-weight: bolder;
+	font-size: 20px;
+	margin-left:40%;
 	margin-top: 30%;
 	opacity: 0.8;
 	border: 2px solid black;

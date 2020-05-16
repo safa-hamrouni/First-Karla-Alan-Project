@@ -1,8 +1,8 @@
 
-$("main").css({"background-image":"url('https://images.unsplash.com/photo-1516534775068-ba3e7458af70?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80')", "background-size":"cover"});
-$("body").css("background-image", "url('https://previews.123rf.com/images/drekhann/drekhann1809/drekhann180900241/109238524-funny-doodle-monsters-seamless-pattern-for-prints-designs-and-coloring-books-vector-illustration.jpg')");
+$("main").css({"background-image":"url('https://thumbs.dreamstime.com/z/brown-blue-wooden-background-light-brown-wooden-floor-blue-light-wooden-wall-background-126467038.jpg')", "background-size":"initial"});
+//$("body").css("background-image", "url('https://previews.123rf.com/images/aliasching/aliasching1604/aliasching160400949/54725367-fun-pixel-squares-background-design-element.jpg')");
+$("body").css("background-color", "white")
 //$("header").css("background-image","url('https://cdn.pixabay.com/photo/2017/02/12/12/42/wall-2059909_960_720.png')")
-
 
 var array = [
     {question: 'Which instrument has forty-seven strings and seven pedals?', answer:['Piano','Kanoon','Harp']},
@@ -29,6 +29,14 @@ var array = [
 function display(){
 	var i = 0;
 	return {
+		up: function(){
+			i++
+		},
+		// reset: function(){
+		// 	if(i === array.length){
+		// 	i = 0
+		// }
+		// },
 		start: function(){
 			$(".deco").hide()
 			 $("#start").on("click", function(){
@@ -36,20 +44,7 @@ function display(){
 			 		$(".deco").show()
 			 	$("#start").hide()
 			 },1000)
-		           $('header').addClass('.change')
 			})
-		},
-		end : function(arr){
-			if(i >12){
-				$(".deco").hide()
-
-			}
-		},
-		up: function(){
-			i++
-		},
-		reset: function(){
-			i = 0
 		},
 		questionAnswer: function(arr){
 			$('div > h3').text(arr[i].question)
@@ -61,17 +56,23 @@ function display(){
 				$('.ans').on("click", function(){
 					var e = $(this)
 					if(e.text() === correctAnswer[i]){
-			 			e.css('background-color', 'green');
-
-			 			
+			 			e.css('background-color', 'green');	
+			 			$('#answers').hide()
+					 	$('h3').append('<div class= "monkey"><img src = "https://2.bp.blogspot.com/-S0fFka6A4vE/WLojzomGEfI/AAAAAAANzHc/HJWE1Ui_OrQlNxhV6bEWNTLGyWWjmHu9wCLcB/s1600/AW386483_01.gif" ></div>')
+					 	$('h3 > .monkey').show()
+					 	setTimeout(function(){
+					 	$('.monkey').hide()
+					 	$('#answers').show()
+					 	}, 5000)
 					}
 					 else {
 					 	e.css("background-color", "red")
 					 	$('#answers').hide()
-					 	$('<img src = "https://thumbs.gfycat.com/DismalGratefulChuckwalla-size_restricted.gif" >').insertAfter('h3')
+					 	$('h3').append('<div class = "monkey"><img src = "https://2.bp.blogspot.com/-E46xUM32mqQ/WhwcIrEXsyI/AAAAAAAN200/yZ1CjxpR8CEyjxnHZiWqo2soQAPN4BQVwCLcBGAs/s1600/AW648334_19.gif" ></div>')
+					 	$('h3 > .monkey').show()
 					 	setTimeout(function(){
-					 		$('#answers').show()
-                               
+					 	$('.monkey').hide()
+					 	$('#answers').show()
 					 	}, 5000)
 					 }
 					$('#reveal').text(didYouKnow[i]);
@@ -80,7 +81,13 @@ function display(){
 		default : function(){
 				$('li').css("background-color", "pink")
 				$('#reveal').text('')
-		}
+		},
+		end : function(arr){
+				if(arr[i] === undefined ){
+				$(".end").hide()
+				$('main').append('<div><img src="https://thumbs.gfycat.com/FatherlyUnfoldedCommongonolek-max-1mb.gif"></div>')
+			}
+			}
 	}
 }
 
@@ -99,6 +106,7 @@ $('#confirm').on('click', function(){
 	nextQuestion.up()
 	nextQuestion.questionAnswer(array)
 })
- 
+
 var end = display()
-end.end(array)
+	end.end(array)
+
