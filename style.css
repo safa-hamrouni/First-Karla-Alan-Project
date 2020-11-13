@@ -6,7 +6,7 @@ header {
 	border:5px solid white;
 	border-radius: 50px;
 	margin-left: 2%;
-	background-image: url('https://souvienstoi.net/wp-content/uploads/2019/09/quiz-1280x720.jpg');
+	background-image: url('https://www.hyh.org.uk/images/banner-quiz-time.jpg');
 	background-color: #ADD8E6;
 	background-size: 100% 100%;
 	box-shadow: 0 0 5px 2px #FFFACD;
@@ -15,10 +15,9 @@ body {
 	width:85%;
 }
 main {
-	width:100%;
 	background-color: beige;
-	background-size: 120% 95%;
-	margin-left:8%;
+	background-size: 100%;
+	margin-left:15%;
 	margin-top: 10%;
 	margin-bottom: 25%;
 	border: 5px solid black;
@@ -101,18 +100,17 @@ h1 {
 	box-shadow: 0 0 10px 5px;
 }
 #start {
-	display: flex;
-	justify-content: center;
 	align-items: center;
 	width:600px;
 	height: 250px;
 	margin:auto;
 	margin-top: 15%;
-	margin-left:35%;
+	margin-left:33%;
 	margin-bottom:15%;
 	padding: 10px 20px;
-	background-image: url('https://cdn2.vectorstock.com/i/1000x1000/62/91/start-neon-sign-design-template-start-race-vector-21256291.jpg');
-	background-size: 100% 120% ;
+	background-image: url('https://image.freepik.com/free-vector/start-now-neon-sign-style-text-vector_118419-713.jpg');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
 	border: 5px solid white;
 	border-radius: 50px;
 	outline: none;
@@ -121,7 +119,6 @@ h1 {
   .monk{
   	display: none;
   	margin-top:10px;
-  	margin-left:20%;
   	width:60%;
   	padding:10px;
   	border-radius: 5px;
@@ -152,7 +149,10 @@ h1 {
 	box-shadow: 0 0 5px 2px #FFFACD;
 
   }
-.thank-you{
-	margin-top: 10px;
-	margin-left:35%;
+.thank-you {
+	margin-left:20%; 
+}
+
+.monkey {
+	margin-left: 34%;
 }

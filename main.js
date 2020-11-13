@@ -1,5 +1,5 @@
 
-$("main").css({"background-image":"url('https://cdn2.vectorstock.com/i/1000x1000/23/11/brick-wall-background-neon-light-vector-27852311.jpg')", "background-size":"initial"});
+$("main").css({"background-image":"url('https://ak.picdn.net/shutterstock/videos/1038439244/thumb/1.jpg?ip=x480"});
 $("body").css("background-image","url('https://image.freepik.com/free-photo/cluster-bright-lights_23-2147798863.jpg')")
 
 var array = [
@@ -98,7 +98,7 @@ $('#finish').on("click", function(){
 	setTimeout(function(){
 		$(".monkey").hide()
 		$('main').hide()
-		$("footer").append('<img class = "thank-you" src="https://floorballvirden.weebly.com/uploads/1/0/6/1/106138143/thank_orig.gif">')
+		$("footer").append('<img class = "thank-you" src="https://ak.picdn.net/shutterstock/videos/1048337131/thumb/2.jpg">')
 	},3000)
 });
 
